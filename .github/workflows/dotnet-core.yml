@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore BasicAuthentication.sln
+      run: dotnet restore samples/aspnet/Katana/HelloWorld/HelloWorld.csproj
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
